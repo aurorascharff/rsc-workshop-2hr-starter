@@ -4,10 +4,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import ContactList from '@/components/ContactList';
 import Search from '@/components/Search';
-import SubmitButton from '@/components/ui/SubmitButton';
-import { createEmptyContact } from '@/lib/actions/createEmptyContact';
-import { getContacts } from '@/lib/services/getContacts';
+import Button from '@/components/ui/Button';
 import Logo from '@/public/next-js.svg';
+import type { Contact } from '@prisma/client';
 import type { Metadata } from 'next';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -19,8 +18,8 @@ export const metadata: Metadata = {
   title: 'Next Contacts',
 };
 
-export default async function RootLayout({ children }: { children: React.ReactNode }) {
-  const contacts = await getContacts();
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const contacts: Contact[] = [];
 
   return (
     <html lang="en">
@@ -29,9 +28,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           <div className="flex h-1/3 w-full flex-col border-r border-gray bg-gray-light sm:h-auto sm:w-[18rem] md:w-[22rem]">
             <div className="flex items-center gap-2 border-b border-gray px-8 py-4">
               <Search />
-              <form action={createEmptyContact}>
-                <SubmitButton theme="secondary">New</SubmitButton>
-              </form>
+              <Button theme="secondary">New</Button>
             </div>
             <ContactList contacts={contacts} />
             <div className="m-0 hidden flex-row items-center gap-2 border-t border-t-gray px-8 py-4 font-medium sm:flex">

@@ -1,8 +1,8 @@
 import Image from 'next/image';
+import Button from '@/components/ui/Button';
 import LinkButton from '@/components/ui/LinkButton';
-import { getContact } from '@/lib/services/getContact';
-import DeleteContactButton from './_components/DeleteContactButton';
 import Favorite from './_components/Favorite';
+import type { Contact } from '@prisma/client';
 
 type PageProps = {
   params: {
@@ -10,9 +10,20 @@ type PageProps = {
   };
 };
 
-export default async function ContactPage({ params }: PageProps) {
+export default function ContactPage({ params }: PageProps) {
   const contactId = decodeURIComponent(params.contactId);
-  const contact = await getContact(contactId);
+  const contact: Contact = {
+    avatar: 'https://sessionize.com/image/b07e-400o400o2-KgNRF3S9sD5ZR4UsG7hG4g.jpg',
+    createdAt: new Date(),
+    email: '',
+    favorite: true,
+    first: 'John',
+    id: contactId,
+    last: 'Doe',
+    notes: 'This is a note.',
+    twitter: 'johndoe',
+    updatedAt: new Date(),
+  };
 
   return (
     <div className="flex flex-col gap-4 lg:flex-row">
@@ -55,7 +66,7 @@ export default async function ContactPage({ params }: PageProps) {
           <LinkButton theme="secondary" href={`/contacts/${contactId}/edit`}>
             Edit
           </LinkButton>
-          <DeleteContactButton contactId={contactId} />
+          <Button theme="destroy">Delete</Button>
         </div>
       </div>
     </div>
