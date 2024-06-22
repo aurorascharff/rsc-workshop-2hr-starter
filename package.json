@@ -1,0 +1,52 @@
+{
+  "name": "next15-remix-contacts-rebuild-v2",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbo",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prisma.studio": "npx prisma studio",
+    "prisma.seed": "npx prisma db seed",
+    "prisma.migrate": "npx prisma migrate dev",
+    "prisma.push": "npx prisma db push"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.11.0",
+    "@types/node": "20.14.2",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0",
+    "autoprefixer": "10.4.16",
+    "babel-plugin-react-compiler": "^0.0.0-experimental-938cd9a-20240601",
+    "clsx": "^2.1.0",
+    "eslint": "8.56.0",
+    "eslint-config-next": "14.0.4",
+    "match-sorter": "^6.3.1",
+    "next": "^15.0.0-rc.0",
+    "postcss": "^8.4.33",
+    "react": "19.0.0-rc-f994737d14-20240522",
+    "react-dom": "19.0.0-rc-f994737d14-20240522",
+    "server-only": "^0.0.1",
+    "sort-by": "^0.0.2",
+    "tailwind-merge": "^2.2.1",
+    "tailwindcss": "^3.4.1",
+    "typescript": "5.3.3",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.10",
+    "@types/eslint": "^8.56.1",
+    "@typescript-eslint/eslint-plugin": "^6.18.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-autofix": "^1.1.0",
+    "eslint-plugin-sort-keys-fix": "^1.1.2",
+    "prettier": "^3.1.1",
+    "prettier-plugin-tailwindcss": "^0.5.11",
+    "prisma": "^5.11.0",
+    "ts-node": "^10.9.2"
+  },
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts"
+  }
+}
