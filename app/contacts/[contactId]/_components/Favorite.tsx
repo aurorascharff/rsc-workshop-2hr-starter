@@ -1,5 +1,3 @@
-'use client';
-
 import React from 'react';
 import { cn } from '@/utils/cn';
 import type { Contact } from '@prisma/client';
@@ -9,7 +7,6 @@ export default function Favorite({ contact }: { contact: Contact }) {
 
   return (
     <button
-      type="submit"
       className={cn(
         favorite ? 'text-yellow-500' : 'text-gray-dark',
         'm-0 p-0 text-2xl font-normal shadow-none hover:text-yellow-400 hover:shadow-none',
