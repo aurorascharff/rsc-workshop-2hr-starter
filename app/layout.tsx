@@ -11,10 +11,11 @@ import type { Metadata } from 'next';
 
 const inter = Inter({ subsets: ['latin'] });
 
+// Tell Next.js to always generate this page on the server (dynamic rather than static)
 export const dynamic = 'force-dynamic';
 
 export const metadata: Metadata = {
-  description: 'Next.js 15 rebuild of Remix Contacts V2',
+  description: 'React Server Components, Server Actions, and Forms in the Next.js App Router',
   title: 'Next Contacts',
 };
 
