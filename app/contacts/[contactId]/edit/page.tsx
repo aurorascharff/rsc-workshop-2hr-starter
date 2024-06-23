@@ -10,7 +10,7 @@ type PageProps = {
 export default function EditContactPage({ params }: PageProps) {
   const contactId = decodeURIComponent(params.contactId);
   const contact: Contact = {
-    avatar: 'https://sessionize.com/image/b07e-400o400o2-KgNRF3S9sD5ZR4UsG7hG4g.jpg',
+    avatar: '',
     createdAt: new Date(),
     email: '',
     favorite: true,
