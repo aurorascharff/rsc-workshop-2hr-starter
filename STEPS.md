@@ -6,6 +6,7 @@
 - Split screen
 - Prepare excalidraw and Next.js docs
 - Not really meant for code a long but feel to try as I go
+- Seed db
 - Make components and give them styles
 
 ## What are server components?
