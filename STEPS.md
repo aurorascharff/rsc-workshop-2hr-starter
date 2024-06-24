@@ -1,6 +1,48 @@
 # Hands-on React Server Components, Server Actions, and Forms in the Next.js App Router
 
-## Introduce Server and Client Components TODO
+## Introduce Server and Client Components
+
+- App in ikognito seperate window
+- Split screen
+- Prepare excalidraw and Next.js docs
+- Not really meant for code a long but feel to try as I go
+- Make components and give them styles
+
+## What are server components?
+
+- App in ikognito
+- Server components are a new feature in React 19, that allows you to run React components on the server. They never re-render, only run once on the server.
+- ServerComponent console log
+- No js in the browser for page.js
+- Excalidraw: diagram of server components
+- Excalidraw: Rendered in build or request time
+- Excalidraw: never hydrated, partially hydrated, exclude js from the client
+- Async and fetch data prisma
+- Limitations onclick button, we need client for interactivite
+
+## What are client components?
+
+- Normal react components are marked with "use client"
+- They are rendered on the server and then hydrated on the client like with normal SSR
+- onClick alert, onclick state change
+- Console log client
+- Excalidraw: show tree
+- Next.js [docs](https://nextjs.org/docs/app/building-your-application/rendering/composition-patterns
+) client/server components
+
+## Client/server composition
+
+- Basically, try to put client code in the leaves to optimize performance
+- Now we need to compose them
+- Client in server: all good
+- Server in client: server becomes client
+- Excalidraw: donut pattern
+- Commit code
+
+## Benefits and drawbacks
+
+- Benefits: data fetching, access to backend, caching, bundle size, streaming, DX
+- Drawbacks: needs framework like nextjs, complexity, learning curve
 
 ## Introduce the repository
 
@@ -28,7 +70,14 @@
 
 ## BREAK
 
-## Introduce Server Actions TODO
+## Introduce Server Actions
+
+- Server actions are a new feature in React 19, that allows you to create server code that can be called from the client
+- Pages router: you created API endpoints and used for example trpc
+- We cant pass functions over the network
+- Type safety and creates a hidden api-endpoint
+- "use server" mutateData.ts
+- Excalidraw: back to the server
 
 ## Write all Server Actions
 
