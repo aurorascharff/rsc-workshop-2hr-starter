@@ -51,6 +51,7 @@
 - Talk about eslint and prettier
 - Talk about Prisma, seed, explain prisma and README for migrations
 - This includes React Compiler for reference
+- Introduce the structure and the components
 
 ## Code all data fetching
 

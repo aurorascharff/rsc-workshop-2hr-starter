@@ -8,14 +8,13 @@ type PageProps = {
 };
 
 export default function EditContactPage({ params }: PageProps) {
-  const contactId = decodeURIComponent(params.contactId);
   const contact: Contact = {
     avatar: '',
     createdAt: new Date(),
     email: '',
     favorite: true,
     first: 'John',
-    id: contactId,
+    id: params.contactId,
     last: 'Doe',
     notes: 'This is a note.',
     twitter: 'johndoe',

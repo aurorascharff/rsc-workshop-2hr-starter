@@ -11,14 +11,13 @@ type PageProps = {
 };
 
 export default function ContactPage({ params }: PageProps) {
-  const contactId = decodeURIComponent(params.contactId);
   const contact: Contact = {
     avatar: '',
     createdAt: new Date(),
     email: '',
     favorite: true,
     first: 'John',
-    id: contactId,
+    id: params.contactId,
     last: 'Doe',
     notes: 'This is a note.',
     twitter: 'johndoe',
@@ -63,7 +62,7 @@ export default function ContactPage({ params }: PageProps) {
         {contact.notes ? <p>{contact.notes}</p> : null}
 
         <div className="my-4 flex gap-2">
-          <LinkButton theme="secondary" href={`/contacts/${contactId}/edit`}>
+          <LinkButton theme="secondary" href={`/contacts/${params.contactId}/edit`}>
             Edit
           </LinkButton>
           <Button theme="destroy">Delete</Button>
