@@ -2,8 +2,7 @@
 
 ## Introduce Server and Client Components
 
-- App in ikognito seperate window
-- Split screen
+- App and code in ikognito seperate window, split screen
 - Prepare excalidraw and Next.js docs
 - Not really meant for code a long but feel to try as I go
 - Seed db
@@ -11,7 +10,6 @@
 
 ## What are server components?
 
-- App in ikognito
 - Server components are a new feature in React 19, that allows you to run React components on the server. They never re-render, only run once on the server.
 - ServerComponent console log
 - No js in the browser for page.js
