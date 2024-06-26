@@ -45,6 +45,7 @@
 
 ## Introduce the repository
 
+- CRUD app for managing contacts
 - This is a starter but its very easy to create a next app following the [docs](https://nextjs.org/docs/app/api-reference/create-next-app). 1 npx command.
 - Next.js has lots of stuff like file-based-routing, nested layouts, caching etc. We will focus on the new stuff.
 - Talk about eslint and prettier
