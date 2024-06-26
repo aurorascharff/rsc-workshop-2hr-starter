@@ -3,11 +3,18 @@ const nextConfig = {
   experimental: {
     reactCompiler: true,
     staleTimes: {
-      dynamic: 30
+      dynamic: 30,
     },
   },
   images: {
-    domains: ['sessionize.com'],
+    remotePatterns: [
+      {
+        hostname: 'sessionize.com',
+        pathname: '/image/**',
+        port: '',
+        protocol: 'https',
+      },
+    ],
   },
 };
 
