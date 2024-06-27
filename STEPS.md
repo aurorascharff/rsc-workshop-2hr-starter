@@ -83,8 +83,9 @@
 
 ## Write all Server Actions
 
-- Revalidatepath
-- Make all crud work
+- Create, delete
+- Update: simple version without validation
+- revalidatePath
 
 ## Use all server actions
 
