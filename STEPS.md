@@ -6,7 +6,7 @@
 - Prepare excalidraw and Next.js docs
 - Not really meant for code a long but feel to try as I go
 - Seed db
-- Make components and give them styles
+- Make components inside /components/intro and give them styles
 
 ## What are server components?
 
@@ -66,8 +66,9 @@
 
 ## Code client component logic
 
-- Kode search component
-- Nevne sidebar og contactButton
+- Kode search component: mention web standard way to search and progressive enhancement already working. Test in edit.
+- Kode contact button
+- Kode contact list
 
 ## BREAK
 
@@ -95,8 +96,8 @@
 
 ## Add interactivity with SubmitButton
 
-- Show component and talk about React 19
-- Add component to all forms, replace with submitButton
+- Add useFormStatus isSubmitting and talk about React 19
+- Add component to all forms, replace button with submitButton
 
 ## Use useActionState for form validation
 

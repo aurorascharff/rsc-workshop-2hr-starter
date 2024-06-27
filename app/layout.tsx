@@ -20,7 +20,20 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const contacts: Contact[] = [];
+  const contacts: Contact[] = [
+    {
+      avatar: '',
+      createdAt: new Date(),
+      email: '',
+      favorite: true,
+      first: 'John',
+      id: '1',
+      last: 'Doe',
+      notes: 'This is a note.',
+      twitter: 'johndoe',
+      updatedAt: new Date(),
+    },
+  ];
 
   return (
     <html lang="en">

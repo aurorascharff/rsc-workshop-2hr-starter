@@ -1,14 +1,10 @@
-'use client';
-
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
 import React from 'react';
 import { cn } from '@/utils/cn';
 import type { Contact } from '@prisma/client';
 
 export default function ContactButton({ contact }: { contact: Contact }) {
-  const pathName = usePathname();
-  const isActive = pathName.includes(`/contacts/${encodeURIComponent(contact.id)}`);
+  const isActive = true;
 
   return (
     <Link
