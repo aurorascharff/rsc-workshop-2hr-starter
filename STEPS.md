@@ -1,23 +1,24 @@
 # Hands-on React Server Components, Server Actions, and Forms in the Next.js App Router
 
-## Introduce Server and Client Components
+## Preperation
 
-- App and code in ikognito seperate window, split screen
-- Prepare excalidraw and Next.js docs
-- Not really meant for code a long but feel to try as I go
+- Download starter repo, make new repo and first commit during workshop
+- Prepare excalidraw and Next.js docs: create-next-app and composition patterns
+- Extend the attendee's screen to my mini-screen during slides
+- During coding, mirror my screen to the big screen, then extend to the mini screen with my repo and STEPS.md file. Split screen code/ikognito main display, excali/docs second.
 - Seed db
 - Write comments as I'm coding
-- Make components inside /components/intro and give them styles
 
 ## What are server components?
 
 - Server components are a new feature in React 19, that allows you to run React components on the server. They never re-render, only run once on the server.
-- Nextjs server component by default
-- ServerComponent console log
-- No js in the browser for page.js
-- Excalidraw: diagram of server components
 - Excalidraw: Rendered in build or request time
 - Excalidraw: never hydrated, partially hydrated, exclude js from the client
+- Nextjs server component by default
+- Excalidraw: diagram of server components
+- Make components inside /components/intro and give them styles
+- ServerComponent console log
+- No js in the browser for page.js
 - Async and fetch data prisma
 - Limitations onclick button, we need client for interactivite
 
@@ -62,7 +63,7 @@
 - Fetch data in contactList: getContacts inside lib/services
 - Fetch data in contact page: getContact inside lib/services
 - Fetch data in edit contact page
-- Discuss composability and compare with React Query
+- Discuss composability and compare with React Query, react cache mention
 - Add slow functions
 - Show suspense and streaming
 
@@ -92,12 +93,11 @@
 - Update: simple version without validation
 - revalidatePath
 
-## Use all server actions
+## Write and use all server actions, make CRUD work
 
-- Action-prop, mention onClick and hydration and web standards
-- Mention .bind og hidden inputs
-- Progressive enhancement
-- Make all the crud work
+- Create: action-prop, mention onClick and hydration and web standards, progressive enhancement
+- Update: action-prop, hidden inputs or .bind
+- Delete: action-prop, .bind, modal hvis tid. Prog enh fallback.
 - Show slow network prog enh search in ikognito waterfall
 
 ## Add interactivity with SubmitButton
@@ -110,4 +110,10 @@
 - Add validation to the form with useActionState and Zod, per-field errors coming back
 - Mention toast on error or error boundary
 - Try without js: disable, delete suspense, then test
-- Mention React hook form and other libraries to come
+- Mention React hook form and other libraries to come building ontop of this
+
+## Exercise
+
+- Make the favorite-button work
+- Make it progressively enhanced
+- Make it optimistic with React 19 [useOptimistic](https://react.dev/reference/react/useOptimistic)
