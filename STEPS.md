@@ -11,6 +11,7 @@
 ## What are server components?
 
 - Server components are a new feature in React 19, that allows you to run React components on the server. They never re-render, only run once on the server.
+- Nextjs server component by default
 - ServerComponent console log
 - No js in the browser for page.js
 - Excalidraw: diagram of server components
@@ -47,10 +48,10 @@
 
 - CRUD app for managing contacts
 - This is a starter but its very easy to create a next app following the [docs](https://nextjs.org/docs/app/api-reference/create-next-app). 1 npx command.
-- Next.js has lots of stuff like file-based-routing, nested layouts, caching etc. We will focus on the new stuff.
 - Talk about eslint and prettier
 - Talk about Prisma, seed, explain prisma and README for migrations
 - This includes React Compiler for reference
+- Next.js has lots of stuff like file-based-routing, nested layouts, caching etc. We will focus on the new stuff.
 - Introduce the structure and the components, all is server right now, loads same contact
 
 ## Code all data fetching
@@ -61,14 +62,17 @@
 - Fetch data in sidebar
 - Fetch data in contact page
 - Fetch data in edit contact page
-- Discuss composability and compare with React Query: make getContact cache
+- Discuss composability and compare with React Query
+- Add slow functions
 - Show suspense and streaming
 
 ## Code client component logic
 
-- Kode search component: mention web standard way to search and progressive enhancement already working. Test in edit.
-- Kode contact button
+- Search component: mention web standard way to search and progressive enhancement already working.
 - Kode contact list
+- Kode contact button: dont need to mark as use client
+- Kode search component
+- Vise excalidraw tree
 
 ## BREAK
 
