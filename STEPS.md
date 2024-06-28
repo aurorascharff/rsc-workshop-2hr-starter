@@ -68,6 +68,7 @@
 
 ## Code client component logic
 
+- Vise excalidraw tree
 - Search component: mention web standard way to search and progressive enhancement already working.
 - Kode contact list: extract to property and move await
 - Kode contact button: dont need to mark as use client
