@@ -4,7 +4,7 @@ import { cn } from '@/utils/cn';
 import type { Contact } from '@prisma/client';
 
 export default function ContactButton({ contact }: { contact: Contact }) {
-  const isActive = true;
+  const isActive = false;
 
   return (
     <Link
