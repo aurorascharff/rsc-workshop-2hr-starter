@@ -6,7 +6,6 @@ import ContactList from '@/components/ContactList';
 import Search from '@/components/Search';
 import Button from '@/components/ui/Button';
 import Logo from '@/public/next-js.svg';
-import type { Contact } from '@prisma/client';
 import type { Metadata } from 'next';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -20,21 +19,6 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const contacts: Contact[] = [
-    {
-      avatar: '',
-      createdAt: new Date(),
-      email: '',
-      favorite: true,
-      first: 'John',
-      id: '1',
-      last: 'Doe',
-      notes: 'This is a note.',
-      twitter: 'johndoe',
-      updatedAt: new Date(),
-    },
-  ];
-
   return (
     <html lang="en">
       <body className={inter.className}>
@@ -44,7 +28,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Search />
               <Button theme="secondary">New</Button>
             </div>
-            <ContactList contacts={contacts} />
+            <ContactList />
             <div className="m-0 hidden flex-row items-center gap-2 border-t border-t-gray px-8 py-4 font-medium sm:flex">
               <Link className="flex items-center gap-2 text-black no-underline" href="/">
                 <Image priority width={30} height={30} src={Logo} alt="" />

@@ -6,6 +6,7 @@
 - Prepare excalidraw and Next.js docs
 - Not really meant for code a long but feel to try as I go
 - Seed db
+- Write comments as I'm coding
 - Make components inside /components/intro and give them styles
 
 ## What are server components?
@@ -52,15 +53,14 @@
 - Talk about Prisma, seed, explain prisma and README for migrations
 - This includes React Compiler for reference
 - Next.js has lots of stuff like file-based-routing, nested layouts, caching etc. We will focus on the new stuff.
-- Introduce the structure and the components, all is server right now, loads same contact
+- Introduce the structure and the components, all is server right now, loads same contact. Pre-coded because this is just react and html. We want more time for the new stuff.
 
 ## Code all data fetching
 
-- Write all data fetching functions inside lib/services
 - Nevne setup her, kan ha 1 fil for hver “feature” osv, smak og behag
 - Nevne server-only
-- Fetch data in sidebar
-- Fetch data in contact page
+- Fetch data in contactList: getContacts inside lib/services
+- Fetch data in contact page: getContact inside lib/services
 - Fetch data in edit contact page
 - Discuss composability and compare with React Query
 - Add slow functions
@@ -69,7 +69,7 @@
 ## Code client component logic
 
 - Search component: mention web standard way to search and progressive enhancement already working.
-- Kode contact list
+- Kode contact list: extract to property and move await
 - Kode contact button: dont need to mark as use client
 - Kode search component
 - Vise excalidraw tree
