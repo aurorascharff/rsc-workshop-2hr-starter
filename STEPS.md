@@ -61,8 +61,8 @@
 - Fetch data in sidebar
 - Fetch data in contact page
 - Fetch data in edit contact page
+- Discuss composability and compare with React Query: make getContact cache
 - Show suspense and streaming
-- Discuss composability and compare with React Query, mention deduping
 
 ## Code client component logic
 
