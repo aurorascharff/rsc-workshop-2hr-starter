@@ -38,6 +38,7 @@
 ) client/server components
 - Now we need to compose them
 - Client in server: all good
+- Client in client: converted
 - Server in client: server becomes client, fails and console.log
 - Excalidraw: donut pattern and fetch data again
 - Commit code
@@ -50,7 +51,6 @@
 ## Introduce the repository
 
 - CRUD app for managing contacts
-- This is a starter but its very easy to create a next app following the [docs](https://nextjs.org/docs/app/api-reference/create-next-app). 1 npx command.
 - Talk about eslint and prettier
 - Talk about Prisma, seed, explain prisma and README for migrations
 - Next.js has lots of stuff like file-based-routing, nested layouts, caching etc. We will focus on the new stuff.
@@ -58,9 +58,9 @@
 
 ## Code all data fetching
 
+- Fetch data in contactList: getContacts inside lib/services
 - Nevne setup her, kan ha 1 fil for hver “feature” osv, smak og behag
 - Nevne server-only
-- Fetch data in contactList: getContacts inside lib/services
 - Fetch data in contact page: getContact inside lib/services
 - Fetch data in edit contact page
 - Discuss composability and compare with React Query
@@ -70,7 +70,6 @@
 
 ## Code client component logic
 
-- Vise excalidraw tree
 - Search component: mention web standard way to search and progressive enhancement already working.
 - Kode contact list: extract to property and move await
 - Kode contact button: dont need to mark as use client
