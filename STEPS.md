@@ -8,6 +8,7 @@
 - During coding, mirror my screen to the big screen, then extend to the mini screen with my repo and STEPS.md file. Split screen code/ikognito main display, excali/docs second.
 - Seed db
 - Write comments as I'm coding
+- Commit after each step
 
 ## What are server components?
 
@@ -111,9 +112,3 @@
 - Mention toast on error or error boundary
 - Try without js: disable, delete suspense, then test
 - Mention React hook form and other libraries to come building ontop of this
-
-## Exercise
-
-- Make the favorite-button work
-- Make it progressively enhanced
-- Make it optimistic with React 19 [useOptimistic](https://react.dev/reference/react/useOptimistic)
