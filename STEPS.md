@@ -15,13 +15,13 @@
 - Server components are a new feature in React 19, that allows you to run React components on the server. They never re-render, only run once on the server.
 - Excalidraw: Rendered in build or request time
 - Excalidraw: never hydrated, partially hydrated, exclude js from the client
-- Nextjs server component by default
+- Next.js is a React framework that includes server components, server component by default
 - Excalidraw: diagram of server components
-- Make components inside /components/intro and give them styles
+- Make servercomponents inside /components/intro and give it styles
 - ServerComponent console log
 - No js in the browser for page.js
-- Async and fetch data prisma
-- Limitations onclick button, we need client for interactivite
+- Async and fetch data prisma, data[0]
+- Limitations onclick button, we need client for interactivity
 
 ## What are client components?
 
@@ -29,16 +29,16 @@
 - They are rendered on the server and then hydrated on the client like with normal SSR
 - onClick alert, onclick state change
 - Console log client
-- Excalidraw: show tree
-- Next.js [docs](https://nextjs.org/docs/app/building-your-application/rendering/composition-patterns
-) client/server components
+- Excalidraw: show tree and discuss hydration
 
 ## Client/server composition
 
 - Basically, try to put client code in the leaves to optimize performance
+- Next.js [docs](https://nextjs.org/docs/app/building-your-application/rendering/composition-patterns
+) client/server components
 - Now we need to compose them
 - Client in server: all good
-- Server in client: server becomes client
+- Server in client: server becomes client, fails and console.log
 - Excalidraw: donut pattern and fetch data again
 - Commit code
 
@@ -53,7 +53,6 @@
 - This is a starter but its very easy to create a next app following the [docs](https://nextjs.org/docs/app/api-reference/create-next-app). 1 npx command.
 - Talk about eslint and prettier
 - Talk about Prisma, seed, explain prisma and README for migrations
-- This includes React Compiler for reference
 - Next.js has lots of stuff like file-based-routing, nested layouts, caching etc. We will focus on the new stuff.
 - Introduce the structure and the components, all is server right now, loads same contact. Pre-coded because this is just react and html. We want more time for the new stuff.
 
