@@ -39,7 +39,7 @@
 - Now we need to compose them
 - Client in server: all good
 - Server in client: server becomes client
-- Excalidraw: donut pattern
+- Excalidraw: donut pattern and fetch data again
 - Commit code
 
 ## Benefits and drawbacks
@@ -64,7 +64,8 @@
 - Fetch data in contactList: getContacts inside lib/services
 - Fetch data in contact page: getContact inside lib/services
 - Fetch data in edit contact page
-- Discuss composability and compare with React Query, react cache mention
+- Discuss composability and compare with React Query
+- Show excalidraw, react cache mention
 - Add slow functions
 - Show suspense and streaming
 
