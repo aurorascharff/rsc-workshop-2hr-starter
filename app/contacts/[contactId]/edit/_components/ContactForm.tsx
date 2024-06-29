@@ -49,7 +49,7 @@ export default function ContactForm({ contactId }: Props) {
         <Input
           defaultValue={contact.avatar || undefined}
           name="avatar"
-          placeholder="https://example.com/avatar.jpg"
+          placeholder="https://sessionize.com/image/example.jpg"
           type="text"
         />
         <label htmlFor="notes">Notes</label>

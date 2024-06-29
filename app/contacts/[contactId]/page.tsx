@@ -65,7 +65,9 @@ export default function ContactPage({ params }: PageProps) {
           <LinkButton theme="secondary" href={`/contacts/${params.contactId}/edit`}>
             Edit
           </LinkButton>
-          <Button theme="destroy">Delete</Button>
+          <Button type="submit" theme="destroy">
+            Delete
+          </Button>
         </div>
       </div>
     </div>

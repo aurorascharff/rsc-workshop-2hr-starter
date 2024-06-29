@@ -81,33 +81,35 @@
 ## Introduce Server Actions
 
 - Server actions are a new feature in React 19, that allows you to create server code that can be called from the client
-- Pages router: you created API endpoints and used for example trpc
 - We cant pass functions over the network
+- Pages router: you created API endpoints and used for example trpc
 - Type safety and creates a hidden api-endpoint
 - "use server" mutateData.ts
 - Excalidraw: back to the server
-
-## Write all Server Actions
-
-- Create, delete
-- Update: simple version without validation
-- revalidatePath
 
 ## Write and use all server actions, make CRUD work
 
 - Create: action-prop, mention onClick and hydration and web standards, progressive enhancement
 - Update: action-prop, hidden inputs or .bind
-- Delete: action-prop, .bind, modal hvis tid. Prog enh fallback.
-- Show slow network prog enh search in ikognito waterfall
+- Delete: action-prop, .bind, modal. Prog enh fallback.
+- Turn off js and show that there is no modal
+- Show slow network prog enh search in ikognito waterfall, show modal shows up afterwards
 
 ## Add interactivity with SubmitButton
 
-- Add useFormStatus isSubmitting and talk about React 19
-- Add component to all forms, replace button with submitButton
+- Use loading boolean for delete button
+- The other buttons are not client components
+- Add useFormStatus isSubmitting and talk about React 19 availability nextjs
+- Use it in new contact
+- Power of rsc, composability of clinet/server while mainaining interactivity
+- Add component to update contact
 
 ## Use useActionState for form validation
 
-- Add validation to the form with useActionState and Zod, per-field errors coming back
+- Whats missing? Validation. We allow empty data but maybe you don't want that.
+- Add validation to the form with useActionState and Zod
+- Move await to page.tsx
+- Per-field errors coming back, use result.data
+- Use errors, then test, then set defaultValue
 - Mention toast on error or error boundary
-- Try without js: disable, delete suspense, then test
-- Mention React hook form and other libraries to come building ontop of this
+- Mention React hook form and other libraries to come building ontop of this, react query because of hooks
