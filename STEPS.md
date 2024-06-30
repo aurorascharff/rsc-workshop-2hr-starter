@@ -112,4 +112,10 @@
 - Per-field errors coming back, use result.data
 - Use errors, then test, then set defaultValue
 - Mention toast on error or error boundary
-- Mention React hook form and other libraries to come building ontop of this, react query because of hooks, primitives
+- Mention React hook form and other libraries to come building ontop of this, react query because of hooks
+
+## Final note
+
+- Excalidraw: final trees
+- Performant applications with good developer experience
+- React 19 hooks ties it together, and there is alot more to come from these. They will be primitives for libraries simpliying things for developers.
