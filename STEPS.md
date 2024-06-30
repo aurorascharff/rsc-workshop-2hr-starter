@@ -107,5 +107,5 @@
 ## Final note
 
 - Excalidraw: final trees
-- Performant applications with good developer experience
+- Performant applications with good developer experience, there´s a lot I didn't cover today
 - React 19 hooks ties it together, and there is alot more to come from these. They will be primitives for libraries simpliying things for developers.
