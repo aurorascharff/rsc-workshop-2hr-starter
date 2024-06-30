@@ -2,16 +2,16 @@
 
 ## What are server components?
 
-- Server components are a new feature in React 19, that allows you to run React components on the server. They never re-render, only run once on the server.
-- Excalidraw: Rendered in build or request time
+- Server components are a new feature in React 19, that allows you to run React components on the server. They never re-render, only run once on the server to generate UI. Js ever shipped to client.
+- Excalidraw: "the server" fullstack framework, rendered in build or request time
 - Excalidraw: never hydrated, partially hydrated, exclude js from the client
 - Next.js is a React framework that includes server components, server component by default
-- Excalidraw: diagram of server components
 - Make servercomponents inside /components/intro and give it styles
 - ServerComponent console log
 - No js in the browser for page.js
+- Excalidraw: diagram of server components
 - Async and fetch data prisma, data[0]
-- Limitations onclick button, we need client for interactivity
+- Limitations onclick button, we need client for interactivity or browser stuff
 
 ## What are client components?
 
@@ -20,12 +20,11 @@
 - onClick alert, onclick state change
 - Console log client
 - Excalidraw: show tree and discuss hydration
+- Basically, try to put client code in the leaves to optimize performance
+- Next.js [docs](https://nextjs.org/docs/app/building-your-application/rendering/composition-patterns) client/server components
 
 ## Client/server composition
 
-- Basically, try to put client code in the leaves to optimize performance
-- Next.js [docs](https://nextjs.org/docs/app/building-your-application/rendering/composition-patterns
-) client/server components
 - Now we need to compose them
 - Client in server: all good
 - Client in client: converted
