@@ -19,6 +19,7 @@
 - They are rendered on the server and then hydrated on the client like with normal SSR
 - onClick alert, onclick state change
 - Console log client
+- Page.js has js in the browser
 - Excalidraw: show tree and discuss hydration
 - Basically, try to put client code in the leaves to optimize performance
 - Next.js [docs](https://nextjs.org/docs/app/building-your-application/rendering/composition-patterns) client/server components
@@ -34,6 +35,7 @@
 
 ## Benefits and drawbacks
 
+- Excalidraw: benefits and drawbacks
 - Benefits: data fetching, access to backend, caching, bundle size, streaming, DX
 - Drawbacks: needs framework like nextjs, complexity, learning curve
 
@@ -41,7 +43,6 @@
 
 - CRUD app for managing contacts
 - Talk about eslint and prettier
-- Talk about Prisma, seed, explain prisma and README for migrations
 - Next.js has lots of stuff like file-based-routing, nested layouts, caching etc. We will focus on the new stuff.
 - Introduce the structure and the components, all is server right now, loads same contact. Pre-coded because this is just react and html. We want more time for the new stuff.
 
