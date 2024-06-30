@@ -7,8 +7,7 @@ generator client {
 
 datasource db {
   provider = "sqlite"
-  url      = "file:./dev.db" // Change to "env("DATABASE_URL")" for production
-  // shadowDatabaseUrl = env("SHADOW_DATABASE_URL") // Comment in for sqlserver in production
+  url      = "file:./dev.db"
 }
 
 model Contact {
