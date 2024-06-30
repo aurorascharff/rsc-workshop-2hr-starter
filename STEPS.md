@@ -57,14 +57,15 @@
 - Show excalidraw, react cache mention
 - Add slow functions
 - Show suspense and streaming
+- Excalidraw tree
 
 ## Code client component logic
 
 - Search component: mention web standard way to search and progressive enhancement already working.
 - Kode contact list: extract to property and move await
 - Kode contact button: dont need to mark as use client
-- Kode search component
-- Vise excalidraw tree
+- Kode search component: preventdefault full page reload, defaultvalue
+- Excalidraw tree
 
 ## BREAK
 
