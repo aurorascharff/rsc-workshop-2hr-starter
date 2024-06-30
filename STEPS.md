@@ -1,15 +1,5 @@
 # Hands-on React Server Components, Server Actions, and Forms in the Next.js App Router
 
-## Preperation
-
-- Download starter repo, make new repo and first commit during workshop
-- Prepare excalidraw and Next.js docs: create-next-app and composition patterns
-- Extend the attendee's screen to my mini-screen during slides
-- During coding, mirror my screen to the big screen, then extend to the mini screen with my repo and STEPS.md file. Split screen code/ikognito main display, excali/docs second.
-- Seed db
-- Write comments as I'm coding
-- Commit after each step
-
 ## What are server components?
 
 - Server components are a new feature in React 19, that allows you to run React components on the server. They never re-render, only run once on the server.
