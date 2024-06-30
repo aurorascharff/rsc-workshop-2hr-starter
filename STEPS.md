@@ -64,7 +64,7 @@
 - Search component: mention web standard way to search and progressive enhancement already working.
 - Kode contact list: extract to property and move await
 - Kode contact button: dont need to mark as use client
-- Kode search component: preventdefault full page reload, defaultvalue
+- Kode search component: preventdefault full page reload, could be a plain filter but we want to use the url, defaultvalue
 - Excalidraw tree
 
 ## BREAK
