@@ -75,8 +75,7 @@
 - We cant pass functions over the network
 - Pages router: you created API endpoints and used for example trpc
 - Type safety and creates a hidden api-endpoint
-- "use server" mutateData.ts
-- Excalidraw: back to the server
+- Excalidraw: "use server" mutateData.ts, back to the server
 
 ## Write and use all server actions, make CRUD work
 
