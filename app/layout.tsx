@@ -26,7 +26,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="flex h-1/3 w-full flex-col border-r border-gray bg-gray-light sm:h-auto sm:w-[18rem] md:w-[22rem]">
             <div className="flex items-center gap-2 border-b border-gray px-8 py-4">
               <Search />
-              <Button theme="secondary">New</Button>
+              <Button type="submit" theme="secondary">
+                New
+              </Button>
             </div>
             <ContactList />
             <div className="m-0 hidden flex-row items-center gap-2 border-t border-t-gray px-8 py-4 font-medium sm:flex">
