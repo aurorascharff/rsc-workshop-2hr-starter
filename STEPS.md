@@ -80,9 +80,9 @@
 
 ## Write and use all server actions, make CRUD work
 
-- Create: action-prop, mention onClick and hydration and web standards, progressive enhancement
-- Update: action-prop, hidden inputs or .bind
-- Delete: action-prop, .bind, modal. Prog enh fallback.
+- Create: action-prop, mention onClick and hydration and web standards, revalidate etter visning
+- Update: action-prop, onSubmit, hidden inputs or .bind, add all props prisma
+- Delete: action-prop, .bind, then modal. Prog enh fallback.
 - Turn off js and show that there is no modal
 - Show slow network prog enh search in ikognito waterfall, show modal shows up afterwards
 
@@ -92,21 +92,23 @@
 - The other buttons are not client components
 - Add useFormStatus isSubmitting and talk about React 19 availability nextjs
 - Use it in new contact
-- Power of rsc, composability of clinet/server while mainaining interactivity
+- Power of rsc, composability of client/server while mainaining interactivity
 - Add component to update contact
 
 ## Use useActionState for form validation
 
-- Whats missing? Validation. We allow empty data but maybe you don't want that.
-- Add validation to the form with useActionState and Zod
+- Whats missing? Validation. We allow empty data but maybe you don't want that. Show invalid image url.
+- Don´t trust client input
+- Add validation to the form in updateContact.ts, then with useActionState and Zod, use result.data
+- Per-field errors coming back
 - Move await to page.tsx
-- Per-field errors coming back, use result.data
 - Use errors, then test, then set defaultValue
-- Mention toast on error or error boundary
+- Mention ways to use useActionState, toast on error or error boundary, db error
 - Mention React hook form and other libraries to come building ontop of this, react query because of hooks
 
 ## Final note
 
 - Excalidraw: final trees
-- Performant applications with good developer experience, there´s a lot I didn't cover today
+- Performant, interactive, prog.enh applications with good developer experience
+- There´s a lot I didn't cover today
 - React 19 hooks ties it together, and there is alot more to come from these. They will be primitives for libraries simpliying things for developers.
