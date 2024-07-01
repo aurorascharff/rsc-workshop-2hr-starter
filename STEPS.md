@@ -76,6 +76,7 @@
 - Pages router: you created API endpoints and used for example trpc
 - Type safety and creates a hidden api-endpoint
 - Excalidraw: "use server" mutateData.ts, back to the server
+- Show in code mutdateData getcontact, use in ClientComponent, show error then no error
 
 ## Write and use all server actions, make CRUD work
 
