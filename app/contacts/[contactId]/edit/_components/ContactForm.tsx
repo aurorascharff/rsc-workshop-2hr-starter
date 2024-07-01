@@ -24,8 +24,8 @@ export default function ContactForm({ contactId }: Props) {
   };
 
   return (
-    <form className="flex max-w-[40rem] flex-col gap-4">
-      <div className="grip-rows-5 grid grid-cols-1 gap-2 sm:grid-cols-[1fr_4fr] sm:gap-4">
+    <form className="@container flex max-w-[40rem] flex-col gap-4">
+      <div className="grip-rows-5 @sm:grid-cols-[1fr_4fr] @sm:gap-4 grid grid-cols-1 gap-2">
         <span className="flex">Name</span>
         <div className="flex gap-4">
           <Input
