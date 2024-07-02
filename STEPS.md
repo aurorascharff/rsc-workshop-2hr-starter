@@ -54,7 +54,7 @@
 - Fetch data in contact page: getContact inside lib/services
 - Fetch data in edit contact page
 - Discuss composability and compare with React Query
-- Show excalidraw, react cache mention
+- Show excalidraw, cache functions
 - Add slow functions
 - Show suspense and streaming
 - Excalidraw tree
