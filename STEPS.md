@@ -2,25 +2,27 @@
 
 ## What are server components?
 
-- Server components are a new feature in React 19, that allows you to run React components on the server. They never re-render, only run once on the server to generate UI. Js never shipped to client.
+- Server components are a new feature in React 19, that allows you to run React components on the server. They never re-render, only run once on the server to generate UI. Js never shipped to client, never hydrated.
 - Excalidraw: "the server" fullstack framework, rendered in build or request time
 - Excalidraw: never hydrated, partially hydrated, exclude js from the client
-- Next.js is a React framework that includes server components, server component by default
+- Next.js is a React framework that includes server components, server component by default. React 19 is available here even though it´s not released yet.
+- Kommentere kode
 - Make servercomponents inside /components/intro and give it styles
 - ServerComponent console log
 - No js in the browser for page.js
-- Excalidraw: diagram of server components
-- Async and fetch data prisma, data[0]
+- Async and fetch data prisma or fetch api, data[0]
+- Anything you do here won't add to the bundle size
 - Limitations onclick button, we need client for interactivity or browser stuff
 
 ## What are client components?
 
 - Normal react components are marked with "use client"
 - They are rendered on the server and then hydrated on the client like with normal SSR
+- Kommentere kode
 - onClick alert, onclick state change
 - Console log client
 - Page.js has js in the browser
-- Excalidraw: show tree and discuss hydration
+- Excalidraw: show tree server and client and discuss hydration
 - Basically, try to put client code in the leaves to optimize performance
 - Next.js [docs](https://nextjs.org/docs/app/building-your-application/rendering/composition-patterns) client/server components
 
@@ -28,16 +30,15 @@
 
 - Now we need to compose them
 - Client in server: all good
-- Client in client: converted
 - Server in client: server becomes client, fails and console.log
 - Excalidraw: donut pattern and fetch data again
-- Commit code
 
 ## Benefits and drawbacks
 
 - Excalidraw: benefits and drawbacks
 - Benefits: data fetching, access to backend, caching, bundle size, streaming, DX
 - Drawbacks: needs framework like nextjs, complexity, learning curve
+- Commit code and show repo
 
 ## Introduce the repository
 
@@ -57,15 +58,19 @@
 - Show excalidraw, cache functions
 - Add slow functions
 - Show suspense and streaming
-- Excalidraw tree
+- Excalidraw tree so far
+- Commit code
 
 ## Code client component logic
 
 - Search component: mention web standard way to search and progressive enhancement already working.
 - Kode contact list: extract to property and move await
 - Kode contact button: dont need to mark as use client
-- Kode search component: preventdefault full page reload, could be a plain filter but we want to use the url, defaultvalue. We are refetching the contact, lets cache this. Show console.log and unstable-cache and mention revalidation.
+- Kode search component: default full page reload, could be a plain filter but we want to use the url, defaultvalue. Concurrent features. Prog-enh works.
+- Cache contact: We are refetching the contact because this page is dynamic, lets cache this. Show unstable-cache and mention revalidation.
 - Excalidraw tree
+- Commit code
+- Questions?
 
 ## BREAK
 
@@ -76,7 +81,9 @@
 - Pages router: you created API endpoints and used for example trpc
 - Type safety and creates a hidden api-endpoint
 - Excalidraw: "use server" mutateData.ts, back to the server
+- Kommentere kode
 - Show in code mutdateData getcontact[0].id, use in ClientComponent, show error then no error
+- Commit code
 
 ## Write and use all server actions, make CRUD work
 
@@ -85,6 +92,7 @@
 - Delete: action-prop, .bind, then modal. Prog enh fallback.
 - Turn off js and show that there is no modal
 - Show slow network prog enh search in ikognito waterfall, show modal shows up afterwards
+- Commit code
 
 ## Add interactivity with SubmitButton
 
@@ -94,6 +102,7 @@
 - Use it in new contact
 - Power of rsc, composability of client/server while mainaining interactivity
 - Add component to update contact
+- Commit code
 
 ## Use useActionState for form validation
 
@@ -105,6 +114,7 @@
 - Use errors, then test, then set defaultValue
 - Mention ways to use useActionState, toast on error or error boundary, db error
 - Mention React hook form and other libraries to come building ontop of this, react query because of hooks
+- Commit code
 
 ## Final note
 
