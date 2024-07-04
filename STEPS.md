@@ -73,6 +73,8 @@
 
 ## BREAK
 
+- Remove slow data fetching
+
 ## Introduce Server Actions
 
 - Server actions are a new feature in React 19, that allows you to create server code that can be called from the client
@@ -107,18 +109,18 @@
 
 - Whats missing? Validation. We allow empty data but maybe you don't want that. Show invalid image url.
 - Don´t trust client input
-- Add validation to the form in updateContact.ts, then with useActionState and Zod, use result.data
+- Add validation to the form in updateContact.ts, throw error, then with useActionState and Zod, use result.data
 - Per-field errors coming back
 - Move await to page.tsx
 - Use errors, then test, then set defaultValue
-- Mention ways to use useActionState, toast on error or error boundary, db error
+- Mention ways to use useActionState, toast on error
 - Mention React hook form and other libraries to come building ontop of this, react query because of hooks
 - Commit code
 
 ## Final note
 
 - Excalidraw: final trees
-- Performant, interactive, prog.enh applications with good developer experience
-- spas are still okay for certain uses cases!
+- Performant, interactive, applications with good developer experience, even be prog.enh
+- Spas are still okay for certain uses cases! But now we solve certain problems.
 - There´s a lot I didn't cover today
-- React 19 hooks ties it together, and there is alot more to come from these. They will be primitives for libraries simpliying things for developers.
+- React 19 hooks ties it together, and there is alot more to come from these. They will be primitives for libraries simpliying things for developers, focus on building apps.
