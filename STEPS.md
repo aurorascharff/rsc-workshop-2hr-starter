@@ -2,11 +2,11 @@
 
 ## What are server components?
 
-- Server components are a new feature in React 19, that allows you to run React components on the server. They never re-render, only run once on the server to generate UI. Js never shipped to client, never hydrated.
+- Server components are a new feature in React 19, that allows you to run React components on the server. Differ from SSR because they never re-render, only run once on the server to generate UI. Js never shipped to client, never hydrated.
 - Excalidraw: "the server" fullstack framework, rendered in build or request time
 - Excalidraw: never hydrated, partially hydrated, exclude js from the client
 - Kommentere kode
-- Next.js is a React framework that includes server components, server component by default. React 19 is available here even though it´s not released yet.
+- Next.js is a React metaframework that includes server components, server component by default.
 - Make servercomponents inside /components/intro and give it styles
 - ServerComponent console log
 - No js in the browser for page.js
