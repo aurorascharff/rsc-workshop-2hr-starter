@@ -5,8 +5,8 @@
 - Server components are a new feature in React 19, that allows you to run React components on the server. They never re-render, only run once on the server to generate UI. Js never shipped to client, never hydrated.
 - Excalidraw: "the server" fullstack framework, rendered in build or request time
 - Excalidraw: never hydrated, partially hydrated, exclude js from the client
-- Next.js is a React framework that includes server components, server component by default. React 19 is available here even though it´s not released yet.
 - Kommentere kode
+- Next.js is a React framework that includes server components, server component by default. React 19 is available here even though it´s not released yet.
 - Make servercomponents inside /components/intro and give it styles
 - ServerComponent console log
 - No js in the browser for page.js
@@ -31,7 +31,7 @@
 - Now we need to compose them
 - Client in server: all good
 - Server in client: server becomes client, fails and console.log
-- Excalidraw: donut pattern and fetch data again
+- Excalidraw: donut pattern and fetch data again, use cases collapsible sidebar or autoscrolling-chat
 
 ## Benefits and drawbacks
 
@@ -57,7 +57,7 @@
 - Discuss composability and compare with React Query
 - Show excalidraw, cache functions
 - Add slow functions
-- Show suspense and streaming
+- Show suspense and streaming, nextjs caching happening
 - Excalidraw tree so far
 - Commit code
 
@@ -70,7 +70,6 @@
 - Cache contact: We are refetching the contact because this page is dynamic, lets cache this. Show unstable-cache and mention revalidation.
 - Excalidraw tree
 - Commit code
-- Questions?
 
 ## BREAK
 
@@ -82,7 +81,7 @@
 - Type safety and creates a hidden api-endpoint
 - Excalidraw: "use server" mutateData.ts, back to the server
 - Kommentere kode
-- Show in code mutdateData getcontact[0].id, use in ClientComponent, show error then no error
+- Show in code mutdateData getcontact[0].id, use in ClientComponent alert, show error then no error
 - Commit code
 
 ## Write and use all server actions, make CRUD work
@@ -120,5 +119,6 @@
 
 - Excalidraw: final trees
 - Performant, interactive, prog.enh applications with good developer experience
+- spas are still okay for certain uses cases!
 - There´s a lot I didn't cover today
 - React 19 hooks ties it together, and there is alot more to come from these. They will be primitives for libraries simpliying things for developers.
