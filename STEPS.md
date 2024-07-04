@@ -76,7 +76,7 @@
 ## Introduce Server Actions
 
 - Server actions are a new feature in React 19, that allows you to create server code that can be called from the client
-- We cant pass functions over the network
+- We cant pass functions over the network, serializable
 - Pages router: you created API endpoints and used for example trpc
 - Type safety and creates a hidden api-endpoint
 - Excalidraw: "use server" mutateData.ts, back to the server
@@ -89,15 +89,15 @@
 - Create: action-prop, mention onClick and hydration and web standards, revalidate etter visning
 - Update: action-prop, onSubmit, hidden inputs or .bind, add all props prisma
 - Delete: action-prop, .bind, then modal. Prog enh fallback.
-- Turn off js and show that there is no modal
-- Show slow network prog enh search in ikognito waterfall, show modal shows up afterwards
+- Show fast 3g network prog enh search in ikognito waterfall, show modal shows up afterwards
 - Commit code
 
 ## Add interactivity with SubmitButton
 
+- Make all functions slow
 - Use loading boolean for delete button
 - The other buttons are not client components
-- Add useFormStatus isSubmitting and talk about React 19 availability nextjs
+- Add useFormStatus isSubmitting
 - Use it in new contact
 - Power of rsc, composability of client/server while mainaining interactivity
 - Add component to update contact
