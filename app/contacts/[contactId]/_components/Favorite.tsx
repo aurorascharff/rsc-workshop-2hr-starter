@@ -9,7 +9,7 @@ export default function Favorite({ contact }: { contact: Contact }) {
     <button
       className={cn(
         favorite ? 'text-yellow-500' : 'text-gray-dark',
-        'm-0 p-0 text-2xl font-normal shadow-none hover:text-yellow-400 hover:shadow-none',
+        'flex text-2xl font-normal shadow-none hover:text-yellow-400 hover:shadow-none',
       )}
       aria-label={favorite ? 'Remove from favorites' : 'Add to favorites'}
     >
