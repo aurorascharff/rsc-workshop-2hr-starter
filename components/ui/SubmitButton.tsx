@@ -1,9 +1,10 @@
 import React from 'react';
 import Button from './Button';
 import { SpinnerIcon } from './icons';
+import type { button } from './Button';
+import type { VariantProps } from 'class-variance-authority';
 
 type Props = {
-  theme?: 'primary' | 'secondary' | 'destroy';
   children: React.ReactNode;
   className?: string;
   loading?: boolean;
@@ -11,12 +12,12 @@ type Props = {
 
 export default function SubmitButton({
   children,
-  theme = 'primary',
   loading,
   disabled,
   className,
+  theme,
   ...otherProps
-}: Props & React.HTMLProps<HTMLButtonElement>) {
+}: Props & React.HTMLProps<HTMLButtonElement> & VariantProps<typeof button>) {
   return (
     <Button theme={theme} {...otherProps} disabled={loading || disabled} type="submit" className={className}>
       {loading ? (
