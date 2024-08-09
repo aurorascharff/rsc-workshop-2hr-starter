@@ -1,11 +1,12 @@
+import { routes } from '@/validations/routeSchema';
 import ContactForm from './_components/ContactForm';
 
 type PageProps = {
-  params: {
-    contactId: string;
-  };
+  params: unknown;
 };
 
 export default function EditContactPage({ params }: PageProps) {
-  return <ContactForm contactId={params.contactId} />;
+  const { contactId } = routes.contactIdEdit.$parseParams(params);
+
+  return <ContactForm contactId={contactId} />;
 }

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import { cn } from '@/utils/cn';
+import { routes } from '@/validations/routeSchema';
 import type { Contact } from '@prisma/client';
 
 export default function ContactButton({ contact }: { contact: Contact }) {
@@ -12,7 +13,7 @@ export default function ContactButton({ contact }: { contact: Contact }) {
         isActive ? 'bg-primary text-white' : 'hover:bg-gray',
         'flex w-full items-center justify-between gap-4 overflow-hidden whitespace-pre rounded-lg p-2 hover:no-underline',
       )}
-      href={`/contacts/${contact.id}`}
+      href={routes.contactId({ contactId: contact.id })}
     >
       {contact.first || contact.last ? (
         <>

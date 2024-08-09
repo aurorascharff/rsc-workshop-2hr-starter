@@ -1,23 +1,24 @@
 import Image from 'next/image';
 import Button from '@/components/ui/Button';
 import LinkButton from '@/components/ui/LinkButton';
+import { routes } from '@/validations/routeSchema';
 import Favorite from './_components/Favorite';
 import type { Contact } from '@prisma/client';
 
 type PageProps = {
-  params: {
-    contactId: string;
-  };
+  params: unknown;
 };
 
 export default function ContactPage({ params }: PageProps) {
+  const { contactId } = routes.contactId.$parseParams(params);
+
   const contact: Contact = {
     avatar: '',
     createdAt: new Date(),
     email: '',
     favorite: true,
     first: 'John',
-    id: params.contactId,
+    id: contactId,
     last: 'Doe',
     notes: 'This is a note.',
     twitter: 'johndoe',
@@ -62,7 +63,7 @@ export default function ContactPage({ params }: PageProps) {
         {contact.notes ? <p>{contact.notes}</p> : null}
 
         <div className="my-4 flex gap-2">
-          <LinkButton theme="secondary" href={`/contacts/${params.contactId}/edit`}>
+          <LinkButton theme="secondary" href={routes.contactIdEdit({ contactId })}>
             Edit
           </LinkButton>
           <Button type="submit" theme="destroy">
